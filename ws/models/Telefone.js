@@ -1,9 +1,8 @@
-// Telefone.js
 const Sequelize = require('sequelize');
 const db = require('./db');
 const Contato = require('./Contato');
 
-const Telefone = db.define('telefones', {
+const Telefone = db.define('telefone', {
     idcontato: {
         type: Sequelize.INTEGER(14),
         allowNull: false,
