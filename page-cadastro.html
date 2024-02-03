@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Projeto Davinti</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="./css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+
+    <div id="main-wrapper">
+
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-abbr" src="./images/logoDavinti1.png" alt="">
+                <img class="logo-compact" src="./images/logoDavinti2.png" alt="">
+                <img class="brand-title" src="./images/logoDavinti2.png" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="quixnav">
+            <div class="quixnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-single-04"></i><span class="nav-text">Menu</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./page-cadastro.html">Cadastro</a></li>
+                            <li><a href="./page-contatos.html">Contatos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-body">
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <div class="row page-titles mx-0">
+                        <div class="col-sm-12 p-md-0 text-center">
+                            <div class="welcome-text">
+                                <h4>Cadastro De Contatos</h4>
+                                <p class="mb-0">Cadastre seus contatos no formulário abaixo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 p-md-0 text-center">
+                    <div class="authincation h-100">
+                        <div class="container-fluid h-100">
+                            <div class="row justify-content-center h-100 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="authincation-content">
+                                        <div class="row no-gutters">
+                                            <div class="col-xl-12">
+                                                <div class="auth-form">
+                                                    <h4 class="text-center mb-4">Cadastro de contato</h4>
+                                                    <form id="formCadastro">
+                                                        <div class="form-group">
+                                                            <label><strong>Nome Do Contato</strong></label>
+                                                            <input type="text" id="nomeContato" class="form-control">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label><strong>Idade</strong></label>
+                                                            <input type="number" id="campoIdade" class="form-control"
+                                                                max="999" oninput="limitaIdade(this)">
+                                                        </div>
+                                                        <div id="telefoneContainer" class="form-group">
+                                                            <label><strong>Número Celular/Telefone</strong></label>
+                                                            <div class="input-group mb-3">
+                                                                <input type="text" class="form-control" id="telefone"
+                                                                    maxlength="15" oninput="aplicaMascaraTelefone(this)"
+                                                                    name="telefone[]">
+                                                                <button class="btn btn-outline-primary btn-sm"
+                                                                    type="button" id="addTelefone"> + </button>
+                                                            </div>
+                                                        </div>
+
+                                                        <button type="button" class="btn btn-outline-success btn-sm"
+                                                            id="btnCadastrar">Cadastrar</button>
+                                                        <button id="btnLimpar"
+                                                            class="btn btn-outline-danger btn-sm">Limpar</button>
+                                                </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            <p>Copyright © &amp; Developed by <a href="#" target="_blank">Gabriel Polessi</a></p>
+        </div>
+    </div>
+
+    <script src="./vendor/global/global.min.js"></script>
+    <script src="./js/quixnav-init.js"></script>
+    <script src="./js/custom.min.js"></script>
+    <script src="./assets/js/validaIdade.js"></script>
+    <script src="./assets/js/validaTelefone.js"></script>
+    <script src="./assets/js/cadastrarContato.js"></script>
+    <script src="./assets/js/limparFormulario.js"></script>
+    <script src="./assets/js/adicionaInputTelefone.js"></script>
+
+</body>
+
+</html>

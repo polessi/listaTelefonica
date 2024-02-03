@@ -1,0 +1,3 @@
+2024-02-03T00:22:40.540Z - Contato excluído: ID: 44, Nome: teste, idade 11.
+2024-02-03T00:22:57.839Z - Contato excluído: ID: 43, Nome: teste, idade 11.
+2024-02-03T00:24:35.443Z - Contato excluído: ID: 42, Nome: teste, idade 11.
